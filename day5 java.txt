@@ -1,0 +1,135 @@
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }System.out.println();
+        }
+    }
+}
+
+
+
+
+
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                System.out.print("*");
+                    }
+            System.out.println();
+        }
+    }
+}
+    
+    
+
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        
+        int n=3;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i[1,1]){
+                    System.out.print();
+                }
+                System.out.print("*");
+            }
+        }
+    }
+}
+
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int count = 0;
+
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+            }
+        }
+
+        if (count == 2) {
+            System.out.println("Prime Number");
+        } else {
+            System.out.println("Not a Prime Number");
+        }
+    }
+}
+
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        for (int i = 1; i < n; i++){
+            if(n % i == 0){
+                sum = sum + i;
+            }
+        }
+        if (sum == n){
+            System.out.println("Perfect Number");
+        }else{
+            System.out.println("Not a Perfect Number");
+        }
+   }
+}
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int temp = n, sum = 0;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+            sum = sum + digit * digit * digit;
+            temp = temp / 10;
+        }
+
+        if (sum == n) {
+            System.out.println("Armstrong Number");
+        } else {
+            System.out.println("Not Armstrong Number");
+        }
+
+            }
+}
+        
+        
+
+
+public class main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+}
+
+    
+    
+
