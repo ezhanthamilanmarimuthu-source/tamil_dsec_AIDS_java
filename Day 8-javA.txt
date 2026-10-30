@@ -1,0 +1,97 @@
+QUESTION 1
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String [] words = s.split(" ");
+        String result = "";
+        for(int i = 0; i < words.length; i++){
+            String word = words[i];
+            for(int j = word.length() - 1; j >= 0; j--){
+                result += word.charAt(j);
+            }
+            result +=  " ";
+        }
+                System.out.println(result.trim());
+
+    }
+}
+
+
+QUESTION 2
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a[][] = new int[3][3];
+        int sum = 0;
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 3; j++){
+                a[i][j] = sc.nextInt();
+            }
+        }
+        for (int i = 0; i < 3; i++){
+            sum = sum + a[i][i];
+        }
+        System.out.println("diagram sum:" + sum);
+}
+}
+
+QUESTION 3
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a[][] = new int[2][3];
+        for (int i=0; i<2; i++){
+            for(int j=0; j<3; j++){
+                a[i][j] = sc.nextInt();
+            }
+        }
+        int largest = a[0][0];
+        for (int i = 0; i < 2; i++){
+            for (int j = 0; j < 3; j++){
+                if(a[i][j] > largest){
+                    largest = a[i][j];
+                }
+            }
+        }
+        System.out.println("largest"+largest);
+
+    }
+}
+
+QUESTION 4
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+       String name = sc.nextLine();
+        String rev = "";
+        for (int i = name.length() - 1; i >= 0; i--){
+            rev = rev + name.charAt(i);
+        }
+        System.out.println(rev);
+        if(rev.trim().equals(name)){
+            System.out.println("palindrome");
+        } else {
+            System.out.println("Not a palindrome");
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
